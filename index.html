@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Member Management System</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>create member</h1>
+    </div>
+    <div>
+      <form id="form">
+        <label for="firstNameInp">First Name</label>
+        <input id="firstNameInp" type="text" name="" placeholder="First Name" />
+        <span id="firstNameError"></span>
+
+        <label for="lastNameInp">Last Name</label>
+        <input id="lastNameInp" type="text" name="" placeholder="Last Name" />
+        <span id="lastNameError"></span>
+
+        <label for="phoneInp">Phone</label>
+        <input id="phoneInp" type="tel" name="phone" placeholder="Phone" />
+        <span id="phoneError"></span>
+
+        <label for="emailInp">Email</label>
+        <input id="emailInp" type="email" name="email" placeholder="Email" />
+        <span id="emailError"></span>
+
+        <label for="birthdayInp">Birthday</label>
+        <input
+          id="birthdayInp"
+          type="date"
+          name="birthday"
+          placeholder="Birthday"
+        />
+        <span id="birthdayError"></span>
+
+        <div class="radio-group">
+          <input id="singlInp" type="radio" name="maritalStatus" />
+          <label for="singlInp">Single</label>
+        </div>
+        <div class="radio-group">
+          <input id="marriedInp" type="radio" name="maritalStatus" />
+          <label for="marriedInp">Married</label>
+        </div>
+        <span id="maritalError"></span>
+
+        <label for="govenrnmentInp">Govenrnment</label>
+          <select id="govenrnmentInp">
+            <option>Cairo</option>
+            <option>Benisuef</option>
+            <option>Alexandria</option>
+          </select>
+        
+
+        <div style="margin-top:10px;">
+          <label for="partTimeInp">Part Time</label>
+          <input
+            id="partTimeInp"
+            type="checkbox"
+            name="partTime"
+            placeholder=""
+          />
+        </div>
+
+        <button id="addMemberBtn" type="button">Add Member</button>
+        <button id="showAllMembersBtn" type="button">Show all members</button>
+      </form>
+    </div>
+
+    <script src="JS/storage.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/create.js"></script>
+  </body>
+</html>
